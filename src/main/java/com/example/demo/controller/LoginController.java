@@ -15,7 +15,7 @@ public class LoginController {
     public String login(@RequestParam String username,
                         @RequestParam String password) {
 
-        if (username.equals("admin") && password.equals("1234")) {
+        if (username.equals("admin") && password.equals("123")) {
             return "redirect:/home";   // ✅ FIX: redirect
         } else {
             return "login";            // stay on login
